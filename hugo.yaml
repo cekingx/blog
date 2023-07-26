@@ -1,4 +1,4 @@
-baseURL: "http://example.org/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://www.cekingx.com/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: Dirga
 paginate: 5
 theme: PaperMod
@@ -28,17 +28,10 @@ languages:
             main:
                 - name: Blog
                   url: blog/
-                  weight: 5
                 - name: Search
                   url: search/
-                  weight: 10
                 - name: Tags
                   url: tags/
-                  weight: 10
-                - name: WiKi
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-                - name: Discord
-                  url: https://discord.gg/ahpmTvhVmp
 
 outputs:
     home:
@@ -49,7 +42,7 @@ outputs:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    author: Dirga Yasa
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -67,54 +60,36 @@ params:
     images: ["papermod-cover.png"]
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "Dirga Yasa"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
-
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
-
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+            Halo, aku Dirga dari Bali. Seorang Backend dan Smart Contract Developer.
+            Aku sangat tertarik dengan perkembangan aplikasi berbasis Blockchain dan Smart Contract.
+            Belakangan sedang belajar mengembangkan aplikasi dengan Rust dan tools-tools yang menggunakan Rust seperti Axum, Substrate dan Ink.
 
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
-        - name: Rss
-          url: "index.xml"
-
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
-
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
+          url: "https://github.com/cekingx"
+        - name: youtube
+          url: "https://www.youtube.com/@cekingx"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/dirga-yasa-80836518a/"
+        - name: email
+          url: "mailto:cekingx@gmail.com"
+        # - name: Rss
+        #   url: "index.xml"
 
     assets:
         disableHLJS: true
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
+        favicon: "/favicon.ico"
 
-    # cover:
-    #     hidden: true # hide everywhere but not in structured data
-    #     hiddenInList: true # hide on list pages and home
-    #     hiddenInSingle: true # hide on single page
-
-    # fuseOpts:
-    #     isCaseSensitive: false
-    #     shouldSort: true
-    #     location: 0
-    #     distance: 1000
-    #     threshold: 0.4
-    #     minMatchCharLength: 0
-    #     keys: ["title", "permalink", "summary", "content"]
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
 
 markup:
     goldmark:
@@ -127,27 +102,3 @@ markup:
         # guessSyntax: true
         # lineNos: true
         # style: monokai
-
-privacy:
-    vimeo:
-        disabled: false
-        simple: true
-
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
-
-    instagram:
-        disabled: false
-        simple: true
-
-    youtube:
-        disabled: false
-        privacyEnhanced: true
-
-services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
