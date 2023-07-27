@@ -9,7 +9,6 @@ TocOpen: false
 hidemeta: false
 comments: true
 hideSummary: false
-searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true

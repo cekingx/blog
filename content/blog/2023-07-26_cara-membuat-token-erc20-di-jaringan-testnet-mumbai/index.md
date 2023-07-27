@@ -9,7 +9,6 @@ TocOpen: false
 hidemeta: false
 comments: true
 hideSummary: false
-searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
@@ -97,7 +96,7 @@ touch scripts/deploy-token.ts
 ```
 Buat file baru dengan nama `deploy-token.ts` pada directory `scripts`. Nama file bisa disesuaikan dengan kebutuhan.
 
-```javascript
+```typescript
 import { ethers } from "hardhat";
 
 async function main() {
